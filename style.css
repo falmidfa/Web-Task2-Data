@@ -1,0 +1,61 @@
+/* Clean, left-to-right layout with clear borders like the screenshot */
+* { box-sizing: border-box; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #fafafa;
+  color: #111;
+  padding: 24px;
+  direction: ltr;
+}
+
+h1 { margin: 0 0 12px; }
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  margin: 8px 0 18px;
+}
+.form-row label {
+  display: flex;
+  flex-direction: column;
+  /*gap: 6px;            /* small spacing between label and input */
+  font-size: 14px;
+}
+input[type="text"], input[type="number"] {
+  padding: 8px 10px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  min-width: 180px;
+}
+input[type="submit"], button {
+  padding: 8px 14px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+input[type="submit"]:hover, button:hover { background: #f4f4f4; }
+.muted { color: #666; margin-left: 8px; }
+
+/* Bordered table like the sample image */
+.grid-table {
+  width: 100%;
+  border-collapse: collapse;  /* classic grid look */
+  background: #fff;
+}
+.grid-table th, .grid-table td {
+  border: 1px solid #cfcfcf;  /* visible cell borders */
+  padding: 5px 7px;         /* small spacing for readability */
+  text-align: center;
+}
+.grid-table th {
+  background: #f7f7f7;
+  font-weight: 600;
+  text-align: center;
+}
+.grid-table th:last-child,
+.grid-table td:last-child {
+  width: 90px;         /* smaller width for the button column */
+  text-align: center;  /* center the button horizontally */
+}
