@@ -34,3 +34,8 @@ It allows users to add a name and age through a form, view all records in a tabl
 
 5. All changes are saved directly to the database.
 
+---
+<img width="1204" height="399" alt="image" src="https://github.com/user-attachments/assets/3d1f9663-cbce-4783-b51f-fbbd6dd46e76" />
+
+
+
